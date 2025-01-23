@@ -1,0 +1,9 @@
+ion-content{
+    --background: var(--ion-color-success, #28a745);
+}
+ion-button[color="dark"]{
+    text-transform: initial;
+}
+ion-button[fill="clear"]{
+    color: #28a745;
+}
