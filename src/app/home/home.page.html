@@ -1,20 +1,43 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+<ion-header>
+  <ion-toolbar class="black">
+    <ion-title>Reciclica</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
+  <ion-card>
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src="https://cdn.pixabay.com/photo/2021/01/17/09/11/woman-5924366_960_720.jpg" alt="User Avatar">
+      </ion-avatar>
+      <ion-label>
+        <h2>Paulo Alves</h2>
+        <p>Gathered: <strong>R$ 15.00</strong></p>
+      </ion-label>
+    </ion-item>
+  </ion-card>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>LAST PICKUP CALL</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-icon name="hourglass-outline" slot="start"></ion-icon>
+        <ion-label>
+          <h3>Call on hold</h3>
+          <p>28/03/2021 17:51:58</p>
+        </ion-label>
+      </ion-item>
+      <p class="date-info">Created on 28/03/2021</p>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-button expand="full" fill="outline" color="success">SEE ALL...</ion-button>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button color="success">
+      <ion-icon name="refresh" color="light"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
 </ion-content>
