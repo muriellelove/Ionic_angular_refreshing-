@@ -1,13 +1,85 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>register</ion-title>
+<ion-header>
+  <ion-toolbar class="black">
+    <ion-title>Register</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">register</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
+  <ion-card class="form-card">
+    <ion-card-content>
+      <ion-list>
+        <ion-radio-group>
+          <ion-list-header>
+            <ion-label>What do you want to do with the recyclable waste?</ion-label>
+          </ion-list-header>
+          <ion-item>
+            <ion-radio slot="start" value="buy"></ion-radio>
+            <ion-label>I want to BUY it</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-radio slot="start" value="sell"></ion-radio>
+            <ion-label>I want to SELL it</ion-label>
+          </ion-item>
+        </ion-radio-group>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card class="form-card">
+    <ion-card-header>
+      <ion-card-title>Contact</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <ion-item>
+          <ion-input placeholder="Name"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input placeholder="Email" type="email"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input placeholder="Password" type="password"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input placeholder="Confirm password" type="password"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input placeholder="Phone number" type="tel"></ion-input>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card class="form-card">
+    <ion-card-header>
+      <ion-card-title>Address information</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <ion-item>
+          <ion-input placeholder="Address"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input placeholder="Number"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input placeholder="Neighborhood"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input placeholder="Complement"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input placeholder="Zip Code"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input placeholder="State"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input placeholder="City"></ion-input>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-button expand="block" color="success" class="form-card">REGISTER</ion-button>
 </ion-content>
